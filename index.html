@@ -12,53 +12,54 @@
 </head>
 <body>
   <header class="main-header container">
-    <a class="logotype" href="index.html" title="DEVICE STORE">
-      <img src="img/index/logo.svg" width="164" height="36" alt="Логотип Device">
-    </a>
-
-    <div class="top-strip">
+    <nav class="top-strip">
+      <a class="logotype" href="index.html" title="DEVICE STORE">
+        <img src="img/index/logo.svg" width="164" height="36" alt="Логотип Device">
+      </a>
       <form class="search-form" action="search.php" method="post">
         <input class="search-field" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-btn" type="submit">Найти</button>
       </form>
-      <nav>
-        <ul class="top-nav-list">
-          <li>
-            <div class="signin-signout">
-              <a class="sign-in" href="#">Войти</a>
-            </div>
-          </li>
-          <li><a class="compare-btn" href="#">Сравнить</a></li>
-          <li><a class="shopping-btn" href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="top-nav-list">
+        <li>
+          <div class="signin-signout">
+            <a class="sign-in" href="#">Войти</a>
+          </div>
+        </li>
+        <li><a class="compare-btn" href="#">Сравнить</a></li>
+        <li><a class="shopping-btn" href="#">Корзина</a></li>
+      </ul>
+    </nav>
 
-    <div class="bottom-strip">
-      <nav>
-        <ul class="bottom-nav-list">
-          <li class="nav-list-item">
-            <a class="bottom-nav-btn bottom-catalogue-btn" href="catalogue.html">Каталог товаров</a>
-            <ul class="catalogue-dropdown-menu">
-              <li class="menu-category"><a class="menu-category-link" href="#">Виртуальная реальность</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Моноподы для селфи</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Экшн-камеры</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Фитнесс-браслеты</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Умные часы</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-            <li class="nav-list-item"><a class="bottom-nav-btn bottom-delivery-btn" href="#">Доставка</a></li>
-            <li class="nav-list-item"><a class="bottom-nav-btn bottom-warranty-btn" href="#">Гарантия</a></li>
-            <li class="nav-list-item"><a class="bottom-nav-btn bottom-contacts-btn" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="bottom-strip">
+      <ul class="bottom-nav-list">
+        <li class="nav-list-item">
+          <a class="bottom-nav-btn bottom-catalogue-btn" href="catalogue.html">Каталог товаров</a>
+          <ul class="catalogue-dropdown-menu">
+            <li class="menu-category">
+              <a class="menu-category-link" href="#">Виртуальная реальность</a>
+              <a class="menu-category-link" href="#">Моноподы для селфи</a>
+              <a class="menu-category-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="menu-category">
+              <a class="menu-category-link" href="#">Фитнесс-браслеты</a>
+              <a class="menu-category-link" href="#">Умные часы</a>
+            </li>
+            <li class="menu-category">
+              <a class="menu-category-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-list-item"><a class="bottom-nav-btn bottom-delievery-btn" href="#">Доставка</a></li>
+        <li class="nav-list-item"><a class="bottom-nav-btn bottom-warranty-btn" href="#">Гарантия</a></li>
+        <li class="nav-list-item"><a class="bottom-nav-btn bottom-contacts-btn" href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section class="slider container">
-      <h2 class="visually-hidden">Slider</h2>
+      <h2 class="visually-hidden">Слайдер</h2>
       <input id="slide-1" class="" type="radio" name="toggle" checked>
       <input id="slide-2" class="" type="radio" name="toggle" >
       <input id="slide-3" class="" type="radio" name="toggle" >
@@ -73,7 +74,7 @@
             <h3 class="slide-title">Делай селфи,<br>как Бэн Стиллер</h3>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="btn slide-btn" href="#">Подробнее</a>
-            <ul class="details">    <!-- стоит ли делать таблицу? -->
+            <ul class="details">
               <li>Длина палки <b>8,5 м</b></li>
               <li>Вес палки <b>5 кг</b></li>
               <li>Материал <b>Карбон</b></li>
@@ -102,7 +103,7 @@
       </section>
 
     <section class="categories container">
-      <h2 class="visually-hidden">Categories</h2>
+      <h2 class="visually-hidden">Категории</h2>
       <ul class="categories-list">
         <li class="categories-item"><a class="categories-link" href="#">Виртуальная реальность</a></li>
         <li class="categories-item"><a class="categories-link" href="#">Моноподы для селфи</a></li>
@@ -114,7 +115,7 @@
     </section>
 
     <section class="services">
-      <h2 class="visually-hidden">Services</h2>
+      <h2 class="visually-hidden">Сервисы</h2>
       <div class="container services-container">
         <div class="services-layout">
          <input id="service-1" class="" type="radio" name="service-toggle" checked>
@@ -129,24 +130,21 @@
           <div class="service services-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img src="img/index/delivery.png" alt="img-delivery">
           </div>
           <div class="service services-warranty">
             <h3>Гарантия</h3>
             <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            <img src="img/index/warranty.png" alt="img-warranty">
           </div>
           <div class="service services-credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            <img src="img/index/credit.png" alt="img-credit">
           </div>
         </div>
       </div>
     </section>
 
     <section class="brand-logos container">
-      <h2 class="visually-hidden">Brands</h2>
+      <h2 class="visually-hidden">Бренды</h2>
       <a href="https://www.dji.com">
         <img src="img/index/logo-dji.png" alt="Dji" width="260" height="100">
       </a>
@@ -162,7 +160,7 @@
     </section>
 
     <section class="about-content container">
-      <h2 class="visually-hidden">About</h2>
+      <h2 class="visually-hidden">О нас</h2>
       <div class="about">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -178,7 +176,10 @@
       <div class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img class="map" src="img/map.jpg" width="560" height="222" alt="Карта">
+        <div class="maps">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A162d1d51c4e510cfcd738426f6fb2edd39b7b1adc4d23c7f260cca5f3a6426d7&amp;source=constructor" width="560" height="222" frameborder="0"></iframe>
+          <img class="map" src="img/map.jpg" width="560" height="222" alt="Карта">
+        </div>
         <a class="btn contacts-btn" href="#">Напишите нам</a>
       </div>
     </section>
@@ -189,7 +190,7 @@
     <section class="footer-top">
       <h2 class="visually-hidden">Footer-top</h2>
       <a class="logotype" href="index.html" title="DEVICE STORE"><img src="img/logo.svg" width="164" height="36" alt="Логотип Device"></a>
-      <nav class="footer-top-nav">
+      <div class="footer-top-nav">
         <ul class="footer-top-nav-list">
           <li class="footer-top-nav-list-item">
             <div class="footer-user-block">
@@ -199,14 +200,14 @@
           <li class="footer-top-nav-list-item"><a class="footer-compare-btn" href="#">Сравнить</a></li>
           <li class="footer-top-nav-list-item"><a class="footer-basket-btn" href="#">Корзина</a></li>
         </ul>
-      </nav>
+      </div>
     </section>
 
     <section class="footer-mid">
       <h2 class="visually-hidden">Footer-mid</h2>
       <p>г. Москва, ул. Строителей, 15</p>
       <p>Тел.: +7 (495) 495-95-95</p>
-        <nav class="footer-mid-nav">
+        <div class="footer-mid-nav">
           <ul class="footer-mid-nav-list">
             <li class="footer-mid-nav-list-item">
               <a class="footer-mid-nav-btn" href="#">Доставка</a>
@@ -218,7 +219,7 @@
               <a class="footer-mid-nav-btn" href="#">Возврат</a>
             </li>
           </ul>
-        </nav>
+        </div>
     </section>
 
     <section class="footer-bot">
@@ -235,27 +236,22 @@
 
   <section class="modal modal-login">
     <h2 class="visually-hidden">modal-login</h2>
-    <button class="modal-loginn-close" type="button">Закрыть</button>
-      <div class="forms">
 
-        <div class="name-form">
-          <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-        </div>
+    <form class="forms" action=".php" method="post">
 
-        <div class="email-form">
-          <label for="email-field">Ваш e-mail:</label>
-          <input id="email-field" type="text" name="e-mail" placeholder="email@example.com">
-        </div>
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
 
-        <div class="message-form">
-          <label for="message-field">Текст письма:</label>
-          <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
-        </div>
-      </div>
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="e-mail" placeholder="email@example.com">
 
-        <button class="submit-form" type="submit">Отправить</button>
+        <label for="message">Текст письма:</label>
+        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
 
+      <input class="submit-form" type="submit" value="Отправить">
+      <input class="modal-login-close" type="button" value="Закрыть">
+
+    </form>
   </section>
 
 </body>

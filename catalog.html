@@ -12,52 +12,54 @@
 </head>
 <body>
   <header class="main-header container">
-    <a class="logotype" href="index.html" title="DEVICE STORE">
-      <img src="img/index/logo.svg" width="164" height="36" alt="Логотип Device">
-    </a>
-
-    <div class="top-strip">
+    <nav class="top-strip">
+      <a class="logotype" href="index.html" title="DEVICE STORE">
+        <img src="img/index/logo.svg" width="164" height="36" alt="Логотип Device">
+      </a>
       <form class="search-form" action="search.php" method="post">
         <input class="search-field" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-btn" type="submit">Найти</button>
       </form>
-      <nav>
-        <ul class="top-nav-list">
-          <li>
-            <div class="signin-user">
-              <a class="user" href="#">Пупкин</a>
-            </div>
-            <div class="signin-signout">
-              <a class="sign-out" href="#">Выйти</a>
-            </div>
-          </li>
-          <li><a class="compare-btn" href="#">Сравнить</a></li>
-          <li><a class="shopping-btn" href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="top-nav-list">
+        <li>
+          <div class="signin">
+            <a class="user" href="#">Пупкин</a>
+          </div>
+        </li>
+        <li>
+          <div class="signin-signout">
+            <a class="sign-in" href="#">Войти</a>
+          </div>
+        </li>
+        <li><a class="compare-btn" href="#">Сравнить</a></li>
+        <li><a class="shopping-btn" href="#">Корзина</a></li>
+      </ul>
+    </nav>
 
-    <div class="bottom-strip">
-      <nav>
-        <ul class="bottom-nav-list">
-          <li class="nav-list-item">
-            <a class="bottom-nav-btn bottom-catalogue-btn" href="catalogue.html">Каталог товаров</a>
-            <ul class="catalogue-dropdown-menu">
-              <li class="menu-category"><a class="menu-category-link" href="#">Виртуальная реальность</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Моноподы для селфи</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Экшн-камеры</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Фитнесс-браслеты</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Умные часы</a></li>
-              <li class="menu-category"><a class="menu-category-link" href="#">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-            <li class="nav-list-item"><a class="bottom-nav-btn bottom-delievery-btn" href="#">Доставка</a></li>
-            <li class="nav-list-item"><a class="bottom-nav-btn bottom-warranty-btn" href="#">Гарантия</a></li>
-            <li class="nav-list-item"><a class="bottom-nav-btn bottom-contacts-btn" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-
+    <nav class="bottom-strip">
+      <ul class="bottom-nav-list">
+        <li class="nav-list-item">
+          <a class="bottom-nav-btn bottom-catalogue-btn" href="catalogue.html">Каталог товаров</a>
+          <ul class="catalogue-dropdown-menu">
+            <li class="menu-category">
+              <a class="menu-category-link" href="#">Виртуальная реальность</a>
+              <a class="menu-category-link" href="#">Моноподы для селфи</a>
+              <a class="menu-category-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="menu-category">
+              <a class="menu-category-link" href="#">Фитнесс-браслеты</a>
+              <a class="menu-category-link" href="#">Умные часы</a>
+            </li>
+            <li class="menu-category">
+              <a class="menu-category-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-list-item"><a class="bottom-nav-btn bottom-delievery-btn" href="#">Доставка</a></li>
+        <li class="nav-list-item"><a class="bottom-nav-btn bottom-warranty-btn" href="#">Гарантия</a></li>
+        <li class="nav-list-item"><a class="bottom-nav-btn bottom-contacts-btn" href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -68,7 +70,7 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalogue.html">Каталог товаров</a></li>
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalogue.html/#selfy">Моноподы для селфи</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Моноподы для селфи</a></li>
           </ul>
         </nav>
     </section>
@@ -76,7 +78,7 @@
     <section class="contant">
       <h2 class="visually-hidden">Contant</h2>
 
-        <aside class="sidebar">
+        <div class="sidebar">
           <div class="sidebar-title-layout">
             <h2 class="sidebar-title">Фильтр:</h2>
           </div>
@@ -118,7 +120,7 @@
               <button class="filter-btn" type="submit">Показать</button>
             </form>
           </div>
-        </aside>
+        </div>
 
         <div class="catalogue">
          <div class="catalogue-layout">
@@ -140,48 +142,48 @@
            <article class="catalogue-item">
              <h2 class="visually-hidden">Catalogue-item</h2>
              <img src="img/catalogue/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-             <div class="catalogue-item-actions">
+             <div class="catalogue-item-actions-btn">
                <button class="item-actions-btn">В корзину</button>
-               <a class="item-actions-link" href="#">Добавить к сравнению</a>
+               <button class="item-actions-link">Добавить к сравнению</button>
              </div>
              <div class="catalogue-item-layout">
-               <p class="catalogue-item-title">Любительская селфи-палка</p>
+               <a class="catalogue-item-title" href="#">Любительская селфи-палка</a>
                <span class="catalogue-item-price">500 руб.</span>
              </div>
            </article>
            <article class="catalogue-item">
              <h2 class="visually-hidden">Catalogue-item</h2>
              <img src="img/catalogue/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-             <div class="catalogue-item-actions">
-               <button class="item-actions-btn">В корзину</button>
-               <a class="item-actions-link" href="#">Добавить к сравнению</a>
-             </div>
+               <div class="catalogue-item-actions-btn">
+                 <button class="item-actions-btn">В корзину</button>
+                 <button class="item-actions-link">Добавить к сравнению</button>
+               </div>
              <div class="catalogue-item-layout">
-               <p class="catalogue-item-title">Профессиональная селфи-палка</p>
+               <a class="catalogue-item-title" href="#">Профессиональная селфи-палка</a>
                <span class="catalogue-item-price">1500 руб.</span>
              </div>
            </article>
            <article class="catalogue-item">
              <h2 class="visually-hidden">Catalogue-item</h2>
              <img src="img/catalogue/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-             <div class="catalogue-item-actions">
+             <div class="catalogue-item-actions-btn">
                <button class="item-actions-btn">В корзину</button>
-               <a class="item-actions-link" href="#">Добавить к сравнению</a>
+               <button class="item-actions-link">Добавить к сравнению</button>
              </div>
              <div class="catalogue-item-layout">
-               <p class="catalogue-item-title">Непотопляемая селфи-палка</p>
+               <a class="catalogue-item-title" href="#">Непотопляемая селфи-палка</a>
                <span class="catalogue-item-price">2500 руб.</span>
              </div>
            </article>
            <article class="catalogue-item">
              <h2 class="visually-hidden">Catalogue-item</h2>
              <img src="img/catalogue/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-             <div class="catalogue-item-actions">
+             <div class="catalogue-item-actions-btn">
                <button class="item-actions-btn">В корзину</button>
-               <a class="item-actions-link" href="#">Добавить к сравнению</a>
+               <button class="item-actions-link">Добавить к сравнению</button>
              </div>
              <div class="catalogue-item-layout">
-               <p class="catalogue-item-title">Селфи-палка «Следуй за мной»</p>
+               <a class="catalogue-item-title" href="#">Селфи-палка «Следуй за мной»</a>
                <span class="catalogue-item-price">4900 руб.</span>
              </div>
            </article>
@@ -251,27 +253,22 @@
 
   <section class="modal modal-login">
     <h2 class="visually-hidden">modal-login</h2>
-    <button class="modal-loginn-close" type="button">Закрыть</button>
-      <div class="forms">
 
-        <div class="name-form">
-          <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-        </div>
+    <form class="forms" action=".php" method="post">
 
-        <div class="email-form">
-          <label for="email-field">Ваш e-mail:</label>
-          <input id="email-field" type="text" name="e-mail" placeholder="email@example.com">
-        </div>
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
 
-        <div class="message-form">
-          <label for="message-field">Текст письма:</label>
-          <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
-        </div>
-      </div>
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="e-mail" placeholder="email@example.com">
 
-        <button class="submit-form" type="submit">Отправить</button>
+        <label for="message">Текст письма:</label>
+        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
 
+      <input class="submit-form" type="submit" value="Отправить">
+      <input class="modal-login-close" type="button" value="Закрыть">
+
+    </form>
   </section>
 
 </body>
