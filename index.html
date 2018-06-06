@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>DEVICE | Мобильные гаджеты</title>
-  <link rel="icon" href="img/icon/favicon.ico">
+  <link rel="icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,10 +14,10 @@
   <header class="main-header container">
     <nav class="top-strip">
       <a class="logotype" href="index.html" title="DEVICE STORE">
-        <img src="img/index/logo.svg" width="164" height="36" alt="Логотип Device">
+        <img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device">
       </a>
       <form class="search-form" action="search.php" method="post">
-        <input class="search-field" type="search" name="search" placeholder="Поиск по сайту">
+        <input class="search-field" type="search" name="search" placeholder="Поиск по сайту" autofocus>
         <button class="search-btn" type="submit">Найти</button>
       </form>
       <ul class="top-nav-list">
@@ -146,16 +146,16 @@
     <section class="brand-logos container">
       <h2 class="visually-hidden">Бренды</h2>
       <a href="https://www.dji.com">
-        <img src="img/index/logo-dji.png" alt="Dji" width="260" height="100">
+        <img src="img/index/dji.jpg" alt="Dji" width="260" height="100">
       </a>
       <a href="https://www.sp-gadgets.com">
-        <img src="img/index/logo-spgadgets.png" alt="SPGadgets" width="260" height="100">
+        <img src="img/index/spg.jpg" alt="SPGadgets" width="260" height="100">
       </a>
       <a href="https://https://www.shop.gopro.com">
-        <img src="img/index/logo-gopro.png" alt="GoPro" width="260" height="100">
+        <img src="img/index/gppro.jpg" alt="GoPro" width="260" height="100">
       </a>
       <a href="https://https://www.vive.com">
-        <img src="img/index/logo-vive.png" alt="VIVE" width="260" height="100">
+        <img src="img/index/vive.jpg" alt="VIVE" width="260" height="100">
       </a>
     </section>
 
@@ -189,7 +189,7 @@
 
     <section class="footer-top">
       <h2 class="visually-hidden">Footer-top</h2>
-      <a class="logotype" href="index.html" title="DEVICE STORE"><img src="img/logo.svg" width="164" height="36" alt="Логотип Device"></a>
+      <a class="logotype" href="index.html" title="DEVICE STORE"><img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device"></a>
       <div class="footer-top-nav">
         <ul class="footer-top-nav-list">
           <li class="footer-top-nav-list-item">
@@ -229,7 +229,9 @@
         <a class="footer-bot-social-btn footer-bot-social-btn-instagram" href="instagram.com">Instagram</a>
         <a class="footer-bot-social-btn footer-bot-social-btn-twitter" href="twitter.com">Twitter</a>
       </div>
-      <a class="main-footer-copyright-logo" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="main-footer-copyright-logo" href="https://htmlacademy.ru">
+        <img src="img/svg/htmlacademy.svg" width="27" height="35" alt="Логотип htmlacademy">HTML Academy
+      </a>
     </section>
 
   </footer>
@@ -240,13 +242,13 @@
     <form class="forms" action=".php" method="post">
 
         <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия" required>
 
         <label for="email">Ваш e-mail:</label>
-        <input id="email" type="text" name="e-mail" placeholder="email@example.com">
+        <input id="email" type="text" name="e-mail" placeholder="email@example.com" required>
 
         <label for="message">Текст письма:</label>
-        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="В свободной форме"></textarea>
 
       <input class="submit-form" type="submit" value="Отправить">
       <input class="modal-login-close" type="button" value="Закрыть">
