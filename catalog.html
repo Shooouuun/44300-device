@@ -17,7 +17,15 @@
         <img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device">
       </a>
       <form class="search-form" action="search.php" method="post">
-        <input class="search-field" type="search" name="search" placeholder="Поиск по сайту" autofocus>
+        <input class="search-field" type="search" name="search" placeholder="Поиск по сайту" list="catalogue" autofocus>
+        <datalist id="catalogue">
+          <option value="Виртуальная реальность">
+          <option value="Моноподы для селфи">
+          <option value="Экшн-камеры">
+          <option value="Фитнес-браслеты">
+          <option value="Умные часы">
+          <option value="Квадрокоптеры">
+        </datalist>
         <button class="search-btn" type="submit">Найти</button>
       </form>
       <ul class="top-nav-list">
@@ -47,7 +55,7 @@
               <a class="menu-category-link" href="#">Экшн-камеры</a>
             </li>
             <li class="menu-category">
-              <a class="menu-category-link" href="#">Фитнесс-браслеты</a>
+              <a class="menu-category-link" href="#">Фитнес-браслеты</a>
               <a class="menu-category-link" href="#">Умные часы</a>
             </li>
             <li class="menu-category">
@@ -68,9 +76,16 @@
       <h1 class="page-title">Моноподы для селфи</h1>
         <nav>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalogue.html">Каталог товаров</a></li>
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Моноподы для селфи</a></li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <span class="nav-arrow"></span>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="catalogue.html">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="">Моноподы для селфи</a>
+            </li>
           </ul>
         </nav>
     </section>
@@ -87,12 +102,10 @@
             <form class="filter-form" action="filter.php" method="post">
               <fieldset>
                 <legend>Стоимость</legend>
-                <div class="filter">
-                  <div class="controls">
-                    <div class="scale"></div>
-                    <div class="toggle-min"></div>
-                    <div class="toggle-max"></div>
-                  </div>
+                <label>
+                  <input type="range" id="amount" name="radio" readonly style="border:0; color: #dbdbdb;">  <!-- а как подцепить от 0 до 5000? повесить id? и как сделать два регулятора? в онлайн магазинах всё на div. подозреваю здесь без js не обойтись -->
+                  <div id="slider-range"></div>
+                </label>
                   <div class="selected-range">
                     <span class="min">От 0</span>
                     <span class="max">До 5000</span>
@@ -103,19 +116,40 @@
               <fieldset>
                 <legend>Цвет</legend>
                 <ul>
-                  <li class="black-color">Чёрный</li>
-                  <li class="white-color">Белый</li>
-                  <li class="blue-color">Синий</li>
-                  <li class="red-color">Красный</li>
-                  <li class="pink-color">Розовый</li>
+                  <li>
+                    <input type="checkbox" name="black-color" id="filter-black-color" checked>
+                    <label for="filter-black-color">Чёрный</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="white-color" id="filter-white-color">
+                    <label for="filter-white-color">Белый</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="blue-color" id="filter-blue-color" checked>
+                    <label for="filter-blue-color">Синий</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="red-color" id="filter-red-color" checked>
+                    <label for="filter-red-color">Красный</label>
+                  </li>
+                  <li class="pink-color">
+                    <input type="checkbox" name="pink-color" id="filter-pink-color">
+                    <label for="filter-pink-color">Розовый</label>
+                  </li>
                 </ul>
               </fieldset>
 
               <fieldset>
                 <legend>Bluetooth</legend>
                 <ul>
-                  <li class="bluetooth-field">Чёрный</li>
-                  <li class="bluetooth-field">Белый</li>
+                  <li class="bluetooth-field">
+                    <input type="radio" name="bluetooth-yes" id="filter-bluetooth-yes" checked>
+                    <label for="filter-bluetooth-ye">Есть</label>
+                  </li>
+                  <li class="bluetooth-field">
+                    <input type="radio" name="bluetooth-no" id="filter-bluetooth-no">
+                    <label for="filter-bluetooth-no">Нет</label>
+                  </li>
                 </ul>
               </fieldset>
               <button class="filter-btn" type="submit">Показать</button>
