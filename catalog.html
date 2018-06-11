@@ -16,8 +16,8 @@
       <a class="logotype" href="index.html" title="DEVICE STORE">
         <img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device">
       </a>
-      <form class="search-form" action="search.php" method="post">
-        <input class="search-field" type="search" name="search" placeholder="Поиск по сайту" autofocus>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="search-field" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-btn" type="submit">Найти</button>
       </form>
       <ul class="top-nav-list">
@@ -81,7 +81,7 @@
     </section>
 
     <section class="contant">
-      <h2 class="visually-hidden">Контент</h2>
+      <h2 class="visually-hidden">Ассортимент</h2>
         <div class="sidebar">
           <div class="sidebar-title-layout">
             <h2 class="sidebar-title">Фильтр:</h2>
@@ -92,15 +92,18 @@
               <fieldset>
                 <legend>Стоимость</legend>
 
-                  <input id="amount" type="range" name="radio" min="0" max="10000" step="1" value="0"><br>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
+                  </div>
 
-                  <label for="number">от
-                    <input id="number">
-                  </label>
-
-                  <label for="number2">до
-                    <input id="number2">
-                  </label>
+                  <div class="price-controls">
+                    от <input class="min-price" type="text" value="0">
+                    до <input class="max-price" type="text" value="5000">
+                  </div>
 
               </fieldset>
 
@@ -227,7 +230,7 @@
   <footer class="main-footer container">
 
     <section class="footer-top">
-      <h2 class="visually-hidden">Футер-юзер-блок</h2>
+      <h2 class="visually-hidden">Область для пользователя</h2>
       <a class="logotype" href="index.html" title="DEVICE STORE"><img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device"></a>
       <nav class="footer-top-nav">
         <ul class="footer-top-nav-list">
@@ -248,7 +251,7 @@
     </section>
 
     <section class="footer-mid">
-      <h2 class="visually-hidden">Футер сервисы</h2>
+      <h2 class="visually-hidden">Контактная информация и сервисы</h2>
       <p>г. Москва, ул. Строителей, 15</p>
       <p>Тел.: +7 (495) 495-95-95</p>
         <nav class="footer-mid-nav">
@@ -267,7 +270,7 @@
     </section>
 
     <section class="footer-bot">
-      <h2 class="visually-hidden">Футер-соц.сети</h2>
+      <h2 class="visually-hidden">Социальные сети магазина Device</h2>
       <div class="footer-bot-social">
         <a class="footer-bot-social-btn footer-bot-socio-btn-facebook" href="facebook.com">Facebook</a>
         <a class="footer-bot-social-btn footer-bot-social-btn-instagram" href="instagram.com">Instagram</a>
