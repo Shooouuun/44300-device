@@ -15,39 +15,5 @@
 
 a:hover,
 a:focus {
-  border: 1px solid red;
-}
-
-
-.cross {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  top: 2px;
-  left: 10px;
-}
-
-.cross:before,
-.cross:after {
-  position: absolute;
-  content: ' ';
-  height: 16px;
-  width: 2px;
-  background-color: black;
-}
-
-.cross:before {
-  transform: rotate(90deg);
-}
-.cross:after {
-  transform: rotate(0deg);
-}
-
-
-.nav-arrow {
-  position: relative;
-  width: 4px;
-  height: 7px;
-  top: 2px;
-  left: 10px;
+  outline: 1px solid red;
 }
