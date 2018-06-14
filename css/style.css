@@ -412,3 +412,19 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+
+/*modal-login*/
+.forms label {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.submit-form {
+  border: none;
+  background-color: transparent;
+}
