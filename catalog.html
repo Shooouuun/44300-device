@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>DEVICE | Моноподы для селфи</title>
   <link rel="icon" href="img/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="keywords" content="Device, виртуальная реальность, моноподы для селфи, экшн-камеры, фитнес-браслеты, умные часы, квадрокоптеры">
@@ -13,26 +13,26 @@
 <body>
   <header class="main-header container">
     <nav class="top-strip">
-      <a class="logotype" href="index.html" title="DEVICE STORE">
+      <a class="header-logotype" href="index.html" title="DEVICE STORE">
         <img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device">
       </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <input class="search-field" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-btn" type="submit">Найти</button>
       </form>
       <ul class="top-nav-list">
-        <li>
+        <li class="top-strip-list-item">
           <div class="signin">
             <a class="user" href="#">Пупкин</a>
           </div>
         </li>
-        <li>
+        <li class="top-strip-list-item">
           <div class="signin-signout">
             <a class="sign-in" href="#">Войти</a>
           </div>
         </li>
-        <li><a class="compare-btn" href="#">Сравнить</a></li>
-        <li><a class="shopping-btn" href="#">Корзина</a></li>
+        <li class="top-strip-list-item"><a class="compare-btn" href="#">Сравнить</a></li>
+        <li class="top-strip-list-item"><a class="shopping-btn" href="#">Корзина</a></li>
       </ul>
     </nav>
 
@@ -166,7 +166,7 @@
              </ul>
              <ul class="sorting-order">
                <li class="sorting-item"><a class="discending" href="#">По возрастанию</a></li>
-               <li class="sorting-item"><a class="ascending" href="#"> По убыванию</a></li>
+               <li class="sorting-item"><a class="ascending" href="#">По убыванию</a></li>
              </ul>
            </div>
          </div>
@@ -175,7 +175,7 @@
            <article class="catalogue-item">
              <img src="img/catalogue/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
              <div class="catalogue-item-actions-btn">
-               <button class="item-actions-btn">В корзину</button>
+               <button class="btn item-actions-btn">В корзину</button>
                <button class="item-actions-link">Добавить к сравнению</button>
              </div>
              <div class="catalogue-item-layout">
@@ -186,7 +186,7 @@
            <article class="catalogue-item">
              <img src="img/catalogue/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                <div class="catalogue-item-actions-btn">
-                 <button class="item-actions-btn">В корзину</button>
+                 <button class="btn item-actions-btn">В корзину</button>
                  <button class="item-actions-link">Добавить к сравнению</button>
                </div>
              <div class="catalogue-item-layout">
@@ -197,7 +197,7 @@
            <article class="catalogue-item">
              <img src="img/catalogue/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
              <div class="catalogue-item-actions-btn">
-               <button class="item-actions-btn">В корзину</button>
+               <button class="btn item-actions-btn">В корзину</button>
                <button class="item-actions-link">Добавить к сравнению</button>
              </div>
              <div class="catalogue-item-layout">
@@ -208,7 +208,7 @@
            <article class="catalogue-item">
              <img src="img/catalogue/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
              <div class="catalogue-item-actions-btn">
-               <button class="item-actions-btn">В корзину</button>
+               <button class="btn item-actions-btn">В корзину</button>
                <button class="item-actions-link">Добавить к сравнению</button>
              </div>
              <div class="catalogue-item-layout">
@@ -231,12 +231,12 @@
      </section>
   </main>
 
-  <footer class="main-footer container">
+  <footer class="main-footer">
 
-    <section class="footer-top">
+    <section class="container footer-top">
       <h2 class="visually-hidden">Область для пользователя</h2>
-      <a class="logotype" href="index.html" title="DEVICE STORE"><img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device"></a>
       <nav class="footer-top-nav">
+        <a class="footer-logotype" href="index.html" title="DEVICE STORE"><img src="img/svg/footer-logo.svg" width="164" height="36" alt="Логотип Device"></a>
         <ul class="footer-top-nav-list">
           <li class="footer-top-nav-list-item">
             <div class="footer-signin">
@@ -254,7 +254,7 @@
       </nav>
     </section>
 
-    <section class="footer-mid">
+    <section class="container footer-mid">
       <h2 class="visually-hidden">Контактная информация и сервисы</h2>
       <p>г. Москва, ул. Строителей, 15</p>
       <p>Тел.: +7 (495) 495-95-95</p>
@@ -267,13 +267,13 @@
               <a class="footer-mid-nav-btn" href="#">Гарантия</a>
             </li>
             <li class="footer-mid-nav-list-item">
-              <a class="footer-mid-nav-btn" href="#">Возврат</a>
+              <a class="footer-mid-nav-btn" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
     </section>
 
-    <section class="footer-bot">
+    <section class="container footer-bot">
       <h2 class="visually-hidden">Социальные сети магазина Device</h2>
       <div class="footer-bot-social">
         <a class="footer-bot-social-btn footer-bot-socio-btn-facebook" href="facebook.com">Facebook</a>
