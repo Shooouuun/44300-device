@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>DEVICE | Моноподы для селфи</title>
   <link rel="icon" href="img/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="keywords" content="Device, виртуальная реальность, моноподы для селфи, экшн-камеры, фитнес-браслеты, умные часы, квадрокоптеры">
@@ -14,21 +14,17 @@
   <header class="main-header container">
     <nav class="top-strip">
       <a class="header-logotype" href="index.html" title="DEVICE STORE">
-        <img src="img/svg/logo-device.svg" width="164" height="36" alt="Логотип Device">
+        <img src="img/svg/logo-device.svg" width="163" height="36" alt="Логотип Device">
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <input class="search-field" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-btn" type="submit">Найти</button>
       </form>
       <ul class="top-nav-list">
-        <li class="top-strip-list-item">
+        <li class="top-strip-list-item"> <!-- ?! -->
           <div class="signin">
-            <a class="user" href="#">Пупкин</a>
-          </div>
-        </li>
-        <li class="top-strip-list-item">
-          <div class="signin-signout">
-            <a class="sign-in" href="#">Войти</a>
+            <a class="sign-in-btn" href="#">Валентин Петухов</a>
+            <a class="sign-out-btn" href="#">Выйти</a>
           </div>
         </li>
         <li class="top-strip-list-item"><a class="compare-btn" href="#">Сравнить</a></li>
@@ -96,8 +92,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <span class="toggle min-toggle"></span>
-                    <span class="toggle max-toggle"></span>
+                    <input type="button" class="toggle min-toggle">
+                    <input type="button" class="toggle max-toggle">
                   </div>
 
                   <div class="price-controls">
