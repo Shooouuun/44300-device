@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
        url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 800;
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url("../fonts/gilroylight.woff2") format("woff2"),
        url("../fonts/gilroylight.woff") format("woff");
   font-weight: 300;
@@ -35,7 +35,7 @@ a:focus {
   z-index: 1;
   display: block;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
@@ -313,7 +313,7 @@ body {
 }
 
 .bottom-nav-btn {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   text-decoration: none;
   color: #000000;
@@ -449,7 +449,7 @@ body {
   margin-top: 80px;
   margin-bottom: 20px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
   font-weight: 800;
   outline: 1px solid green;
@@ -495,7 +495,7 @@ body {
   content: "01";
   z-index: -1;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 180px;
   line-height: 180px;
   font-weight: 800;
@@ -518,7 +518,7 @@ body {
   content: "02";
   z-index: -1;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 180px;
   line-height: 180px;
   font-weight: 800;
@@ -541,7 +541,7 @@ body {
   content: "03";
   z-index: -1;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 180px;
   line-height: 180px;
   font-weight: 800;
@@ -606,7 +606,7 @@ body {
   top: -40px;
   left: 0;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   outline: 1px solid green;
@@ -653,7 +653,7 @@ body {
   width: 160px;
   padding-top: 200px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -763,7 +763,7 @@ body {
   width: 160px;
   margin-top: 20px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   text-align: center;
@@ -819,7 +819,7 @@ body {
 }
 
 .service h3 {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   color: #000000;
   font-size: 47px;
@@ -950,7 +950,7 @@ body {
 }
 
 .about-item {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
@@ -988,6 +988,7 @@ body {
   outline: 1px solid white;
 }
 
+
 .footer-logotype {
   display: flex;
   align-items: center;
@@ -1002,15 +1003,15 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	width: 510px;
+	width: 480px;
   outline: 1px solid white;
 }
 
-.footer-user-block {
-	display: flex;
-	justify-content: flex-end;
-	width: 260px;
+.footer-signin {
+  width: 180px;
+  outline: 1px solid white;
 }
+
 
 .footer-basket-btn,
 .footer-compare-btn,
@@ -1019,9 +1020,23 @@ body {
 	display: inline-block;
 	font-size: 15px;
 
-	line-height: 36px;
+	line-height: 30px;
 	padding-left: 25px;
 	text-decoration: none;
+  outline: 1px solid white;
+}
+
+.footer-sign-out-btn {
+  color: #ffffff;
+	display: inline-block;
+	font-size: 15px;
+  text-align: center;
+
+	line-height: 30px;
+  margin-left: -30px;
+	text-decoration: none;
+  outline: 1px solid white;
+  opacity: 0.3;
 }
 
 .footer-login-btn {
@@ -1030,7 +1045,7 @@ body {
 
 .footer-login-btn::before {
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 0;
   content: "";
 
@@ -1047,7 +1062,7 @@ body {
 
 .footer-compare-btn::before {
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 0;
   content: "";
 
@@ -1063,7 +1078,7 @@ body {
 
 .footer-basket-btn::before {
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 0;
   content: "";
 
@@ -1117,12 +1132,14 @@ body {
 
 .footer-mid-nav-btn {
 	color: #ffffff;
-	font-family: Gilroy, Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 30px;
 	text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
+
 }
 
 
@@ -1192,7 +1209,7 @@ body {
 }
 
 
-/*MODAL*/
+/*MODAL-CONTENT*/
 
 .modal-content {
   display: none;
@@ -1212,6 +1229,19 @@ body {
   transform: translate(-50%, -50%);
   background-color: white;
   box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.forms label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.submit-form {
+  border: none;
+  background-color: transparent;
 }
 
 .feedback-form-layout {
@@ -1288,10 +1318,9 @@ body {
   cursor: pointer;
 }
 
-
-
-
+/*MODAL-MAP*/
 .modal-map {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1323,51 +1352,81 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*MAIN COTOLOG*/
-.catalogue-title h1 {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-weight: 800;
-  color: #000000;
-  font-size: 47px;
-  line-height: 48px;
+/******MAIN COTOLOG*******/
+.page-header {
+  margin-bottom: 42px;
 }
 
-.breadcrumbs {
+.page-title {
+  padding-left: 60px;
+  margin-bottom: 25px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 60px;
+
   list-style: none;
 }
 
-.breadcrumbs a{
-  font-weight: 300;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000000;
+.breadcrumbs-list-item {
+  position: relative;
+
+  margin-right: 40px;
 }
 
+.breadcrumbs-link {
+  font-size: 14px;
+  color: #cacaca;
+  text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  color: #8d8d8d;
+}
+
+.breadcrumbs-link:active {
+  color: #eeeeee;
+}
+
+.breadcrumbs-list-item:last-child .breadcrumbs-link:hover {
+  color: #cacaca;
+}
+
+.breadcrumbs-list-item::before {
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  
+
+  width: 5px;
+  height: 2px;
+  background-image: url(../img/svg/cart.svg);
+  background-repeat: no-repeat;
+
+  background-color: black;
+}
+
+.breadcrumbs-list-item:last-child::after,
+.breadcrumbs-list-item:last-child::before {
+  width: 0;
+  height: 0;
+}
+
+
+
+
+
+
+
 .sidebar-title {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   text-decoration: none;
   font-size: 16px;
@@ -1378,7 +1437,7 @@ body {
 }
 
 .filter-form legend{
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   text-decoration: none;
   font-size: 18px;
@@ -1398,7 +1457,7 @@ body {
 }
 
 .sorting-title {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   text-decoration: none;
   font-size: 16px;
@@ -1452,27 +1511,11 @@ body {
 }
 
 .buttons-catalogue a{
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-
-
-/*modal-login*/
-.forms label {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.submit-form {
-  border: none;
-  background-color: transparent;
 }

@@ -59,21 +59,13 @@
   </header>
 
   <main>
-    <section class="catalogue-title container">
+    <section class="page-header container">
       <h1 class="page-title">Моноподы для селфи</h1>
-        <nav>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalogue.html">Каталог товаров</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="">Моноподы для селфи</a>
-            </li>
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-list-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+            <li class="breadcrumbs-list-item"><a class="breadcrumbs-link" href="catalogue.html">Каталог товаров</a></li>
+            <li class="breadcrumbs-list-item"><a class="breadcrumbs-link">Моноподы для селфи</a></li>
           </ul>
-        </nav>
     </section>
 
     <section class="contant">
@@ -92,8 +84,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <input type="button" class="toggle min-toggle">
-                    <input type="button" class="toggle max-toggle">
+                    <input type="button" class="toggle min-toggle" value="min">
+                    <input type="button" class="toggle max-toggle" value="max">
                   </div>
 
                   <div class="price-controls">
@@ -229,32 +221,28 @@
 
   <footer class="main-footer">
 
-    <section class="container footer-top">
+    <section class="container">
       <h2 class="visually-hidden">Область для пользователя</h2>
-      <nav class="footer-top-nav">
+      <div class="footer-top">
         <a class="footer-logotype" href="index.html" title="DEVICE STORE"><img src="img/svg/footer-logo.svg" width="164" height="36" alt="Логотип Device"></a>
         <ul class="footer-top-nav-list">
           <li class="footer-top-nav-list-item">
             <div class="footer-signin">
-              <a class="user" href="#">Пупкин</a>
+              <a class="footer-login-btn" href="#">Валентин Петухов</a>
             </div>
           </li>
-          <li class="footer-top-nav-list-item">
-            <div class="footer-user-block">
-              <a class="footer-login-btn" href="#">Войти</a>
-            </div>
-          </li>
+          <li class="footer-top-nav-list-item"><a class="footer-sign-out-btn" href="#">Выйти</a></li>
           <li class="footer-top-nav-list-item"><a class="footer-compare-btn" href="#">Сравнить</a></li>
           <li class="footer-top-nav-list-item"><a class="footer-basket-btn" href="#">Корзина</a></li>
         </ul>
-      </nav>
+      </div>
     </section>
 
     <section class="container footer-mid">
       <h2 class="visually-hidden">Контактная информация и сервисы</h2>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <p>Тел.: +7 (495) 495-95-95</p>
         <nav class="footer-mid-nav">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <p>Тел.: +7 (495) 495-95-95</p>
           <ul class="footer-mid-nav-list">
             <li class="footer-mid-nav-list-item">
               <a class="footer-mid-nav-btn" href="#">Доставка</a>
@@ -272,11 +260,11 @@
     <section class="container footer-bot">
       <h2 class="visually-hidden">Социальные сети магазина Device</h2>
       <div class="footer-bot-social">
-        <a class="footer-bot-social-btn footer-bot-socio-btn-facebook" href="facebook.com">Facebook</a>
-        <a class="footer-bot-social-btn footer-bot-social-btn-instagram" href="instagram.com">Instagram</a>
-        <a class="footer-bot-social-btn footer-bot-social-btn-twitter" href="twitter.com">Twitter</a>
+        <a class="footer-bot-social-btn footer-bot-social-btn-facebook" href="https://facebook.com">Facebook</a>
+        <a class="footer-bot-social-btn footer-bot-social-btn-instagram" href="https://instagram.com">Instagram</a>
+        <a class="footer-bot-social-btn footer-bot-social-btn-twitter" href="https://twitter.com">Twitter</a>
       </div>
-      <a class="main-footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
+      <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
         <img src="img/svg/logo-htmlacademy.svg" width="27" height="35" alt="Логотип htmlacademy">
       </a>
     </section>
