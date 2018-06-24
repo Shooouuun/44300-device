@@ -58,8 +58,8 @@
     </nav>
   </header>
 
-  <main>
-    <section class="page-header container">
+  <main class="container">
+    <section class="container page-header">
       <h1 class="page-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-list-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
@@ -70,9 +70,10 @@
 
     <section class="contant">
       <h2 class="visually-hidden">Ассортимент</h2>
+
         <div class="sidebar">
-          <div class="sidebar-title-layout">
-            <h2 class="sidebar-title">Фильтр:</h2>
+          <div class="sidebar-title">
+            <h3 class="sidebar-title">Фильтр:</h3>
           </div>
 
           <div class="sidebar-filter-layout">
@@ -90,10 +91,10 @@
 
                   <div class="price-controls">
                     <label>
-                      от <input class="min-price" type="text" value="0">
+                      <span>от</span> <input class="min-price" type="text" value="0">
                     </label>
                     <label>
-                    до <input class="max-price" type="text" value="5000">
+                    <span>до</span> <input class="max-price" type="text" value="5000">
                     </label>
                   </div>
 
@@ -138,15 +139,15 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="filter-btn" type="submit">Показать</button>
+              <button class="btn filter-btn" type="submit">Показать</button>
             </form>
           </div>
         </div>
 
         <div class="catalogue">
          <div class="catalogue-layout">
-           <div class="catalogue-sorting">
-             <h2 class="sorting-title">Сортировка:</h2>
+          <div class="catalogue-sorting">
+            <h2 class="sorting-title">Сортировка:</h2>
              <ul class="sorting-options">
                <li class="sorting-options-item"><a href="#">По цене</a></li>
                <li class="sorting-options-item"><a href="#">По типу</a></li>
@@ -162,7 +163,7 @@
          <div class="catalogue-items">
            <article class="catalogue-item">
              <img src="img/catalogue/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-             <div class="catalogue-item-actions-btn">
+             <div class="catalogue-item-actions">
                <button class="btn item-actions-btn">В корзину</button>
                <button class="item-actions-link">Добавить к сравнению</button>
              </div>
@@ -171,9 +172,10 @@
                <span class="catalogue-item-price">500 руб.</span>
              </div>
            </article>
+
            <article class="catalogue-item">
              <img src="img/catalogue/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-               <div class="catalogue-item-actions-btn">
+               <div class="catalogue-item-actions">
                  <button class="btn item-actions-btn">В корзину</button>
                  <button class="item-actions-link">Добавить к сравнению</button>
                </div>
@@ -182,9 +184,10 @@
                <span class="catalogue-item-price">1500 руб.</span>
              </div>
            </article>
+
            <article class="catalogue-item">
              <img src="img/catalogue/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-             <div class="catalogue-item-actions-btn">
+             <div class="catalogue-item-actions">
                <button class="btn item-actions-btn">В корзину</button>
                <button class="item-actions-link">Добавить к сравнению</button>
              </div>
@@ -193,9 +196,10 @@
                <span class="catalogue-item-price">2500 руб.</span>
              </div>
            </article>
+
            <article class="catalogue-item">
              <img src="img/catalogue/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-             <div class="catalogue-item-actions-btn">
+             <div class="catalogue-item-actions">
                <button class="btn item-actions-btn">В корзину</button>
                <button class="item-actions-link">Добавить к сравнению</button>
              </div>
@@ -209,7 +213,7 @@
          <nav class="buttons-catalogue">
            <a class="button-back" href="#">Назад</a>
            <ul class="button-mid">
-             <li class="catalogue-buttom-item"><a class="catalogue-link" href="#">1</a></li>
+             <li class="catalogue-buttom-item"><a class="catalogue-link active" href="#">1</a></li>
              <li class="catalogue-buttom-item"><a class="catalogue-link" href="#">2</a></li>
              <li class="catalogue-buttom-item"><a class="catalogue-link" href="#">3</a></li>
            </ul>
@@ -224,7 +228,8 @@
     <section class="container">
       <h2 class="visually-hidden">Область для пользователя</h2>
       <div class="footer-top">
-        <a class="footer-logotype" href="index.html" title="DEVICE STORE"><img src="img/svg/footer-logo.svg" width="164" height="36" alt="Логотип Device"></a>
+        <a class="footer-logotype" href="index.html" title="DEVICE STORE">Device
+          <!-- <img src="img/svg/footer-logo.svg" width="164" height="36" alt="Логотип Device"></a> -->
         <ul class="footer-top-nav-list">
           <li class="footer-top-nav-list-item">
             <div class="footer-signin">
@@ -238,23 +243,15 @@
       </div>
     </section>
 
-    <section class="container footer-mid">
+    <section class="footer-mid-nav container">
       <h2 class="visually-hidden">Контактная информация и сервисы</h2>
-        <nav class="footer-mid-nav">
-          <p>г. Москва, ул. Строителей, 15</p>
-          <p>Тел.: +7 (495) 495-95-95</p>
+        <p class="footer-address">г. Москва, ул. Строителей, 15</p>
           <ul class="footer-mid-nav-list">
-            <li class="footer-mid-nav-list-item">
-              <a class="footer-mid-nav-btn" href="#">Доставка</a>
-            </li>
-            <li class="footer-mid-nav-list-item">
-              <a class="footer-mid-nav-btn" href="#">Гарантия</a>
-            </li>
-            <li class="footer-mid-nav-list-item">
-              <a class="footer-mid-nav-btn" href="#">Контакты</a>
-            </li>
+            <li class="footer-mid-nav-list-item"><a class="footer-mid-nav-btn" href="#">Доставка</a></li>
+            <li class="footer-mid-nav-list-item"><a class="footer-mid-nav-btn" href="#">Гарантия</a></li>
+            <li class="footer-mid-nav-list-item"><a class="footer-mid-nav-btn" href="#">Контакты</a></li>
           </ul>
-        </nav>
+        <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
     </section>
 
     <section class="container footer-bot">
