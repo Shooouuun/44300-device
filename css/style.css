@@ -1542,7 +1542,7 @@ body {
   display: flex;
   flex-direction: column;
   width: calc(50% - 250px);
-  outline: 1px solid black;
+  outline: 1px solid red;
 }
 
 .sidebar-layout {
@@ -1737,7 +1737,7 @@ body {
 .catalogue {
   width: calc(50% + 250px);
 
-  outline: 1px solid green;
+  outline: 1px solid black;
 }
 
 .catalogue-layout {
