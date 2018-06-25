@@ -1452,6 +1452,7 @@ body {
 /******PAGE-HEADER******/
 .page-header {
   display: flex;
+  justify-content: center;
 	flex-direction: column;
 
 	width: 500px;
@@ -1459,16 +1460,22 @@ body {
 	padding: 0;
 	margin-left: 60px;
 	margin-top: 38px;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
+
   outline: 1px solid black;
 }
 
-.page-title{
+.page-header h1 {
 	margin: 0;
 	margin-bottom: 25px;
+}
 
+.page-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-size: 48px;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  color: #000000;
   font-weight: 800;
   outline: 2px solid green;
 }
@@ -1482,11 +1489,11 @@ body {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 24px;
-	letter-spacing: 0.01;
+	letter-spacing: 0.01em;
 	color: rgba(0, 0, 0, 0.3);
 
 	list-style: none;
-
+  text-decoration: none;
   outline: 1px solid red;
 }
 
@@ -1494,20 +1501,20 @@ body {
 .breadcrumbs-list-item {
   position: relative;
 
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
 .breadcrumbs-link {
-  color: #cacaca;
+  color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
 .breadcrumbs-link:hover {
-  color: #8d8d8d;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumbs-link:active {
-  color: #eeeeee;
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .breadcrumbs-list-item:last-child .breadcrumbs-link:hover {
@@ -1528,48 +1535,60 @@ body {
 /******CONTANT******/
 .contant {
   display: flex;
-  margin-left: 60px;
   outline: 1px solid black;
-
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: calc(50% - 250px);
   outline: 1px solid black;
 }
 
-.sidebar-title {
-  background-color: #dbdbdb;
+.sidebar-layout {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  outline: 1px solid black;
 }
 
-.sidebar-filter-layout {
-  width: 200px;
-  padding-top: 69px;
-  padding-right: 70px;
-  outline: 1px solid black;
+.sidebar-title-layout {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .sidebar-filter-layout {
   flex-grow: 1;
 
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 
 .sidebar-title {
+  width: 250px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 18px;
+
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  text-decoration: none;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 800;
   text-transform: uppercase;
-  color: #000000;
   letter-spacing: 0.2em;
+  color: black;
+  outline: 1px solid black;
 }
+
+
+
+
 
 .filter-form {
   position: relative;
+  width: 200px;
+  padding-top: 60px;
+  padding-right: 70px;
 }
 
 .filter-form fieldset {
@@ -1583,22 +1602,25 @@ body {
 }
 
 .filter-form legend {
+  position: relative;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 30px;
+  outline: 1px solid red;
+  width: 100%;
 }
 
 .filter-form legend::before {
   position: absolute;
   content: "";
+  top: -16px;
+  left: 0;
 
-  top: ;
-  left: 0px;
-
-  width: 200px;
+  width: 100%;
   height: 2px;
 
   background-color: black;
@@ -1607,8 +1629,7 @@ body {
 .range-controls {
   position: relative;
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   outline: 1px solid green;
 }
 
@@ -1714,17 +1735,19 @@ body {
 
 /******CATALOGUE******/
 .catalogue {
-  width: 850px;
+  width: calc(50% + 250px);
+
   outline: 1px solid green;
 }
 
 .catalogue-layout {
-  background-color: #ebebeb;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .catalogue-sorting {
   display: flex;
   width: 830px;
+
   outline: 1px solid green;
 }
 
@@ -1736,6 +1759,7 @@ body {
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
+  line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1781,7 +1805,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 830px;
+  max-width: 770px;
   margin-bottom: 40px;
   padding-top: 70px;
   padding-left: 60px;
@@ -1829,7 +1853,7 @@ body {
   opacity: 0.7;
 }
 
-.catalogue-item img:hover + .catalogue-item-actions,
+.catalogue-item:hover + .catalogue-item-actions,
 .catalogue-item-actions:hover {
   display: flex;
   flex-direction: column;
