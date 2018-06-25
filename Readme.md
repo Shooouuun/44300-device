@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Sergey Kolgaev](https://up.htmlacademy.ru/htmlcss/21/user/44300).
-* Наставник: [Сергей Попенко](https://htmlacademy.ru/profile/id66243)
+* Наставник: [Наталья Ильина](https://htmlacademy.ru/profile/ellianta)
 
 ---
 
