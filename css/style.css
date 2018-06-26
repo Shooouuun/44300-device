@@ -12,6 +12,28 @@
   font-weight: 300;
 }
 
+/**********BODY**********/
+body {
+  min-width: 1200px;
+  margin: 40px 0 0;
+  padding: 0;
+  letter-spacing: 0.01em;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -74,20 +96,6 @@ a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/**********BODY**********/
-body {
-  min-width: 1200px;
-  margin: 40px 0 0;
-  padding: 0;
-  letter-spacing: 0.01em;
-
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: 300;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -102,7 +110,7 @@ body {
   background-color: #f7e296;
 }
 
-.index-page .main-header {
+.main-header-index {
   min-height: 300px;
 }
 /***********TOP-STRIP***********/
@@ -427,7 +435,7 @@ body {
   z-index: 10;
 }
 
-.bottom-nav-list > .nav-list-item:hover .catalogue-dropdown-menu {
+.nav-list-item:hover .catalogue-dropdown-menu {
   display: flex;
 }
 
@@ -652,7 +660,6 @@ body {
 
 .details p {
   margin-top: 5px;
-  margin-bottom: 50px;
   font-size: 13px;
   line-height: 20px;
 
@@ -761,9 +768,14 @@ body {
   background-color: #f0c52e;
 }
 
-.categories-link:active::after {  /* переопределил. как мне еще и текст подцепить? добавить <p> и повесить на него эктив? как лучше реализовать?*/
+.categories-link:active::after {
   opacity: 0.3;
 }
+
+.categories-link:active span {
+  opacity: 0.3;
+}
+
 /***********SERVICES***********/
 .services {
   height: 288px;
@@ -927,11 +939,11 @@ body {
   display: none;
 }
 
-.brand-logos a:hover img:first-child {
+.brand-logos-link:hover img:first-child {
   display: none;
 }
 
-.brand-logos a:hover img:last-child {
+.brand-logos-link:hover img:last-child {
   display: block;
 }
 /***********ABOUT-CONTENT***********/
@@ -1075,7 +1087,7 @@ body {
 }
 
 .footer-top-nav-list-item {
-  margin-left: 40px;
+  margin-left: 42px;
   position: relative;
   opacity: 0.7;
 }
@@ -1089,7 +1101,7 @@ body {
 }
 
 .footer-signin {
-  width: 180px;
+  width: 165px;
   outline: 1px solid white;
 }
 
@@ -1099,7 +1111,7 @@ body {
 	font-size: 15px;
 	line-height: 30px;
 
-	padding-left: 28px;
+	padding-left: ;
 	text-decoration: none;
   outline: 1px solid white;
 }
@@ -1110,7 +1122,7 @@ body {
 	font-size: 15px;
 	line-height: 30px;
 
-	padding-left: 21px;
+	padding-left: ;
 	text-decoration: none;
   outline: 1px solid white;
 }
@@ -1121,7 +1133,7 @@ body {
 	font-size: 15px;
 	line-height: 30px;
 
-	padding-left: 21px;
+	padding-left: ;
 	text-decoration: none;
   outline: 1px solid white;
 }
@@ -1139,41 +1151,24 @@ body {
   opacity: 0.3;
 }
 
-.footer-login-btn::before {  /* не отображаются иконки в chrome */
-  position: absolute;
-  top: 10px;
-  left: 0;
-  content: "";
+.footer-login-btn svg {
+	padding-right: 10px;
 
-  width: 13px;
-  height: 12px;
-  background-image: url(../img/svg/user.svg);
-  background-repeat: no-repeat;
+	fill: #ffc600;
 }
 
-.footer-compare-btn::before {
-  position: absolute;
-  top: 12px;
-  left: 0;
-  content: "";
+.footer-compare-btn svg {
+	padding-right: 5px;
 
-  width: 10px;
-  height: 10px;
-  background-image: url(../img/svg/compare.svg);
-  background-repeat: no-repeat;
+	fill: #ffc600;
 }
 
-.footer-basket-btn::before {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  content: "";
+.footer-basket-btn svg {
+	padding-right: 5px;
 
-  width: 14px;
-  height: 12px;
-  background-image: url(../img/svg/cart.svg);
-  background-repeat: no-repeat;
+	fill: #ffc600;
 }
+
 /*************FOOTER-MIDDLE**************/
 .footer-mid-nav {
   display: flex;
@@ -1532,7 +1527,7 @@ body {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumbs-list-item:last-child .breadcrumbs-link:hover {
+.breadcrumbs-list[href]:hover {
   color: #cacaca;
 }
 

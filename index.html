@@ -10,8 +10,8 @@
   <meta name="keywords" content="Device, виртуальная реальность, моноподы для селфи, экшн-камеры, фитнес-браслеты, умные часы, квадрокоптеры">
   <meta name="description" content="Онлайн магазин мобильных гаджетов">
 </head>
-<body class="index-page">
-  <header class="main-header container">
+<body>
+  <header class="main-header-index main-header container">
     <nav class="top-strip">
       <a class="header-logotype" href="index.html" title="DEVICE STORE">Device</a>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -119,12 +119,12 @@
     <section class="categories container">
       <h2 class="visually-hidden">Категории товара</h2>
       <ul class="categories-list">
-        <li class="categories-item"><a class="categories-link" href="#">Виртуальная реальность</a></li>
-        <li class="categories-item"><a class="categories-link" href="#">Моноподы для&nbsp;селфи</a></li>
-        <li class="categories-item"><a class="categories-link" href="#">Экшн-камеры</a></li>
-        <li class="categories-item"><a class="categories-link" href="#">Фитнес-браслеты</a></li>
-        <li class="categories-item"><a class="categories-link" href="#">Умные часы</a></li>
-        <li class="categories-item"><a class="categories-link" href="#">Квадрокоптеры</a></li>
+        <li class="categories-item"><a class="categories-link" href="#"><span>Виртуальная реальность</span></a></li>
+        <li class="categories-item"><a class="categories-link" href="#"><span>Моноподы для&nbsp;селфи</span></a></li>
+        <li class="categories-item"><a class="categories-link" href="#"><span>Экшн-камеры</span></a></li>
+        <li class="categories-item"><a class="categories-link" href="#"><span>Фитнес-браслеты</span></a></li>
+        <li class="categories-item"><a class="categories-link" href="#"><span>Умные часы</span></a></li>
+        <li class="categories-item"><a class="categories-link" href="#"><span>Квадрокоптеры</span></a></li>
       </ul>
     </section>
 
@@ -159,19 +159,19 @@
 
     <section class="brand-logos container">
       <h2 class="visually-hidden">Наличие брендов в магазине Device</h2>
-      <a href="https://www.dji.com">
+      <a class="brand-logos-link" href="https://www.dji.com">
         <img src="img/index/dji-opacity.jpg" alt="Dji" width="260" height="100">
         <img src="img/index/dji.jpg" alt="Dji" width="260" height="100">
       </a>
-      <a href="https://www.sp-gadgets.com">
+      <a class="brand-logos-link" href="https://www.sp-gadgets.com">
         <img src="img/index/spg-opacity.jpg" alt="SPGadgets" width="260" height="100">
         <img src="img/index/spg.jpg" alt="SPGadgets" width="260" height="100">
       </a>
-      <a href="https://https://www.shop.gopro.com">
+      <a class="brand-logos-link" href="https://https://www.shop.gopro.com">
         <img src="img/index/gopro-opacity.jpg" alt="GoPro" width="260" height="100">
         <img src="img/index/gopro.jpg" alt="GoPro" width="260" height="100">
       </a>
-      <a href="https://https://www.vive.com">
+      <a class="brand-logos-link" href="https://https://www.vive.com">
         <img src="img/index/vive-opacity.jpg" alt="VIVE" width="260" height="100">
         <img src="img/index/vive.jpg" alt="VIVE" width="260" height="100">
       </a>
@@ -204,18 +204,38 @@
   </main>
 
   <footer class="main-footer">
-    <h2 class="visually-hidden">Область для пользователя</h2>
     <section class="footer-top container">
+      <h2 class="visually-hidden">Область для пользователя</h2>
       <a class="footer-logotype" href="index.html" title="DEVICE STORE">Device</a>
       <div class="footer-top-nav">
         <ul class="footer-top-nav-list">
           <li class="footer-top-nav-list-item">
             <div class="footer-user-block">
-              <a class="footer-login-btn" href="#">Войти</a>
+              <a class="footer-login-btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+                  <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+                </svg>
+                <span>Войти</span>
+              </a>
             </div>
           </li>
-          <li class="footer-top-nav-list-item"><a class="footer-compare-btn" href="#">Сравнить</a></li>
-          <li class="footer-top-nav-list-item"><a class="footer-basket-btn" href="#">Корзина</a></li>
+          <li class="footer-top-nav-list-item">
+            <a class="footer-compare-btn" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+              </svg>
+              <span>Сравнить</span>
+            </a>
+          </li>
+          <li class="footer-top-nav-list-item">
+            <a class="footer-basket-btn" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
+                <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+              </svg>
+              <span>Корзина</span>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -238,9 +258,7 @@
         <a class="footer-bot-social-btn footer-bot-social-btn-instagram" href="https://instagram.com">Instagram</a>
         <a class="footer-bot-social-btn footer-bot-social-btn-twitter" href="https://twitter.com">Twitter</a>
       </div>
-      <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
-        <img src="img/svg/logo-htmlacademy.svg" width="27" height="35" alt="Логотип htmlacademy">
-      </a>
+      <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     </section>
   </footer>
 
