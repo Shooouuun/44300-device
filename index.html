@@ -10,7 +10,7 @@
   <meta name="keywords" content="Device, виртуальная реальность, моноподы для селфи, экшн-камеры, фитнес-браслеты, умные часы, квадрокоптеры">
   <meta name="description" content="Онлайн магазин мобильных гаджетов">
 </head>
-<body>
+<body class="index-page">
   <header class="main-header container">
     <nav class="top-strip">
       <a class="header-logotype" href="index.html" title="DEVICE STORE">Device</a>
@@ -73,9 +73,16 @@
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="btn slide-btn" href="#">Подробнее</a>
             <ul class="details">
-              <li><b>8,5 м</b><p>Длина палки</p></li>
-              <li><b>5 кг</b><p>Вес палки</p></li>
-              <li><b>Карбон</b><p>Материал</p></li>
+              <li>
+                <b>8,5 м</b>
+                <p>Длина палки</p></li>
+              <li>
+                <b>5 кг</b>
+                <p>Вес палки</p></li>
+              <li>
+                <b>Карбон</b>
+                <p>Материал</p>
+              </li>
             </ul>
           </article>
 
@@ -84,7 +91,10 @@
             <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.</p>
             <a class="btn slide-btn" href="#">Подробнее</a>
             <ul class="details">
-              <li><b>48 часов</b><p>Без подзарядки</p></li>
+              <li>
+                <b>48 часов</b>
+                <p>Без подзарядки</p>
+              </li>
             </ul>
           </article>
 
@@ -104,11 +114,11 @@
             </ul>
           </article>
         </div>
-      </section>
+    </section>
 
     <section class="categories container">
       <h2 class="visually-hidden">Категории товара</h2>
-      <ul class="categories-list"> <!-- здесь косяк, исправлю позже, если додумаюсь -->
+      <ul class="categories-list">
         <li class="categories-item"><a class="categories-link" href="#">Виртуальная реальность</a></li>
         <li class="categories-item"><a class="categories-link" href="#">Моноподы для&nbsp;селфи</a></li>
         <li class="categories-item"><a class="categories-link" href="#">Экшн-камеры</a></li>
@@ -183,7 +193,7 @@
 
       <div class="contacts">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="maps">
           <img class="map" src="img/index/map.jpg" width="560" height="222" alt="Россия, Москва, улица Строителей, 15">
 
@@ -194,22 +204,19 @@
   </main>
 
   <footer class="main-footer">
-
-    <section class="container">
-      <h2 class="visually-hidden">Область для пользователя</h2>
-      <div class="footer-top">
-        <a class="footer-logotype" href="index.html" title="DEVICE STORE">Device</a>
-        <div class="footer-top-nav">
-          <ul class="footer-top-nav-list">
-            <li class="footer-top-nav-list-item">
-              <div class="footer-user-block">
-                <a class="footer-login-btn" href="#">Войти</a>
-              </div>
-            </li>
-            <li class="footer-top-nav-list-item"><a class="footer-compare-btn" href="#">Сравнить</a></li>
-            <li class="footer-top-nav-list-item"><a class="footer-basket-btn" href="#">Корзина</a></li>
-          </ul>
-        </div>
+    <h2 class="visually-hidden">Область для пользователя</h2>
+    <section class="footer-top container">
+      <a class="footer-logotype" href="index.html" title="DEVICE STORE">Device</a>
+      <div class="footer-top-nav">
+        <ul class="footer-top-nav-list">
+          <li class="footer-top-nav-list-item">
+            <div class="footer-user-block">
+              <a class="footer-login-btn" href="#">Войти</a>
+            </div>
+          </li>
+          <li class="footer-top-nav-list-item"><a class="footer-compare-btn" href="#">Сравнить</a></li>
+          <li class="footer-top-nav-list-item"><a class="footer-basket-btn" href="#">Корзина</a></li>
+        </ul>
       </div>
     </section>
 
@@ -235,27 +242,26 @@
         <img src="img/svg/logo-htmlacademy.svg" width="27" height="35" alt="Логотип htmlacademy">
       </a>
     </section>
-
   </footer>
 
   <section class="modal-content">
     <h2 class="visually-hidden">Форма отправки сообщения</h2>
     <button class="modal-content-close" type="button">Закрыть</button>
       <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="feedback-form-layout">
-            <div class="feedback-form-layout-group">
-              <label for="name-field">Ваше имя:</label>
-              <input id="name-field" type="text" name="name" placeholder="Имя Фамилия" required>
-            </div>
-            <div class="feedback-form-layout-group">
-              <label for="email-field">Ваш e-mail:</label>
-              <input id="email-field" type="text" name="e-mail" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-            </div>
+        <div class="feedback-form-layout">
+          <div class="feedback-form-layout-group">
+            <label for="name-field">Ваше имя:</label>
+            <input id="name-field" type="text" name="name" placeholder="Имя Фамилия" required>
           </div>
+          <div class="feedback-form-layout-group">
+            <label for="email-field">Ваш e-mail:</label>
+            <input id="email-field" type="text" name="e-mail" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          </div>
+        </div>
           <label for="message-field">Текст письма:</label>
           <textarea id="message-field" name="message" rows="7" cols="105" placeholder="В свободной форме"></textarea>
           <button class="btn modal-content-submit" type="submit">Отправить</button>
-        </form>
+      </form>
   </section>
 
   <section class="modal-map">
@@ -264,6 +270,5 @@
 
     <button class="modal-map-close" type="button">Закрыть</button>
   </section>
-
 </body>
 </html>

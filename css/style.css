@@ -11,7 +11,7 @@
        url("../fonts/gilroylight.woff") format("woff");
   font-weight: 300;
 }
-/*
+
 a {
   text-decoration: none;
   color: inherit;
@@ -21,7 +21,7 @@ a:hover,
 a:focus {
   outline: 1px solid red;
 }
-*/
+
 .visually-hidden {
   position: absolute;
 	width: 1px;
@@ -74,6 +74,7 @@ a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/**********BODY**********/
 body {
   min-width: 1200px;
   margin: 40px 0 0;
@@ -92,16 +93,18 @@ body {
   margin: 0 auto;
   outline: 1px solid black;
 }
-
 /**********HEADER**********/
 .main-header {
   position: relative;
   box-sizing: border-box;
   padding: 33px 60px 0 60px;
-  min-height: 300px;
+  min-height: 185px;
   background-color: #f7e296;
 }
 
+.index-page .main-header {
+  min-height: 300px;
+}
 /***********TOP-STRIP***********/
 .header-logotype {
   position: absolute;
@@ -186,7 +189,7 @@ body {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-/****TOP-NAV-LIST****/
+/***********TOP-NAV-LIST***********/
 .top-nav-list {
   display: flex;
   justify-content: space-between;
@@ -307,6 +310,7 @@ body {
 }
 
 .header-logotype:hover,
+.footer-logotype:hover,
 .sign-in-btn:hover,
 .compare-btn:hover,
 .shopping-btn:hover {
@@ -314,13 +318,23 @@ body {
 }
 
 .header-logotype:active,
+.footer-logotype:active,
 .sign-in-btn:active,
 .compare-btn:active,
 .shopping-btn:active {
   opacity: 0.3;
 }
 
-/****BOTTOM-NAV-LIST****/
+.sign-out-btn:hover,
+.footer-login-btn:hover {
+  opacity: 1;
+}
+
+.sign-out-btn:active,
+.footer-login-btn:active {
+  opacity: 0.3;
+}
+/***********BOTTOM-NAV-LIST***********/
 .bottom-strip {
   box-sizing: border-box;
   outline: 1px solid black;
@@ -394,8 +408,7 @@ body {
 .bottom-nav-btn:active {
   opacity: 0.3;
 }
-
-/****DROPDOWN MENU****/
+/***********DROPDOWN MENU***********/
 .catalogue-dropdown-menu {
   position: absolute;
   left: 0px;
@@ -406,10 +419,7 @@ body {
   align-items: flex-start;
   display: none;
 
-
   width: 600px;
-
-
 
   background-color: #f7e296;
   list-style: none;
@@ -449,6 +459,7 @@ body {
   margin: 0;
   padding: 0;
   display: inline-block;
+  vertical-align: middle;
   list-style: none;
   font-size: 15px;
   line-height: 36px;
@@ -465,8 +476,8 @@ body {
 .menu-category-link:active{
   opacity: 0.3;
 }
-/**********MAIN**********/
-/**********SLIDER**********/
+/***********MAIN***********/
+/***********SLIDER***********/
 .slider {
   position: relative;
   z-index: 1;
@@ -516,8 +527,6 @@ body {
 }
 
 .slide p {
-
-
   font-size: 15px;
   line-height: 30px;
   outline: 1px solid green;
@@ -663,10 +672,9 @@ body {
   display: block;
 }
 
-/**********CATEGORIES**********/
+/***********CATEGORIES***********/
 .categories {
   margin-bottom: 182px;
-
   outline: 1px solid black;
 }
 
@@ -684,6 +692,7 @@ body {
 .categories-link {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 160px;
   padding-top: 192px;
 
@@ -748,17 +757,14 @@ body {
   background-image: url("../img/svg/popular-6.svg");
 }
 
-.categories-link:hover::after {
+.categories-link:hover::before {
   background-color: #f0c52e;
 }
 
-.categories-link:active::after {
+.categories-link:active::after {  /* переопределил. как мне еще и текст подцепить? добавить <p> и повесить на него эктив? как лучше реализовать?*/
   opacity: 0.3;
 }
-
-
-
-/*SERVICES*/
+/***********SERVICES***********/
 .services {
   height: 288px;
   background-color: #e5e5e5;
@@ -795,7 +801,6 @@ body {
 	width: 7px;
 }
 
-
 .services-controls label {
   position: relative;
   z-index: 1;
@@ -816,8 +821,7 @@ body {
   outline: 1px solid green;
 }
 
-.services-controls label::before
-{
+.services-controls label::before {
 	background-color: #f0c52e;
 	content: "";
 	height: 8px;
@@ -849,8 +853,6 @@ body {
   background-color: black;
   transition: 0.3s;
 }
-
-
 
 .service {
   display: none;
@@ -906,8 +908,7 @@ body {
 #service-3:checked ~ .services-credit {
   display: block;
 }
-
-/*BRAND*/
+/***********BRAND***********/
 .brand-logos {
   display: flex;
   justify-content: space-between;
@@ -933,9 +934,7 @@ body {
 .brand-logos a:hover img:last-child {
   display: block;
 }
-
-
-/*ABOUT-CONTENT*/
+/***********ABOUT-CONTENT***********/
 .about-content {
 	display: flex;
 	justify-content: space-between;
@@ -945,10 +944,9 @@ body {
 
 .about,
 .contacts {
-  position: relative;
   display: flex;
   flex-direction: column;
-
+  position: relative;
 
 	min-height: 565px;
 	width: 560px;
@@ -983,12 +981,11 @@ body {
 	font-size: 15px;
 	line-height: 30px;
 	margin-bottom: 15px;
-  margin-right: 50px;
+  margin-right: 40px;
   outline: 1px solid green;
 }
 
 .about-list {
-  box-sizing: border-box;
 	list-style: none;
   margin-top: 50px;
   padding: 0;
@@ -996,20 +993,21 @@ body {
 }
 
 .about-item {
+  position: relative;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
-  padding-left: 35px;
 
+  padding-left: 35px;
 }
 
-.about-list li::before { /* не работает */
+.about-item::before {
   position: absolute;
   content: "";
 
-  left: 0;
-  top: 15px;
+  left: 1px;
+  top: 16px;
   width: 4px;
   height: 4px;
 
@@ -1031,15 +1029,12 @@ body {
 	width: 260px;
   margin-top: auto;
 }
-
-
-
 /*************FOOTER**************/
 .main-footer {
 	background-color: #464646;
 	padding-top: 50px;
 }
-/*************FOOTER-TOP**************/
+/**************FOOTER-TOP**************/
 .footer-top {
 	display: flex;
 	justify-content: space-between;
@@ -1068,27 +1063,35 @@ body {
 }
 
 .footer-top-nav-list {
+  display: flex;
 	align-items: center;
-	display: flex;
 	height: 55px;
 	justify-content: flex-end;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	width: 480px;
+	width: 900px;
   outline: 1px solid white;
 }
 
 .footer-top-nav-list-item {
   margin-left: 40px;
   position: relative;
+  opacity: 0.7;
+}
+
+.footer-top-nav-list-item:hover {
+  opacity: 1;
+}
+
+.footer-top-nav-list-item:active{
+  opacity: 0.3;
 }
 
 .footer-signin {
   width: 180px;
   outline: 1px solid white;
 }
-
 
 .footer-login-btn {
 	color: #ffffff;
@@ -1136,8 +1139,7 @@ body {
   opacity: 0.3;
 }
 
-
-.footer-login-btn::before {
+.footer-login-btn::before {  /* не отображаются иконки в chrome */
   position: absolute;
   top: 10px;
   left: 0;
@@ -1172,7 +1174,6 @@ body {
   background-image: url(../img/svg/cart.svg);
   background-repeat: no-repeat;
 }
-
 /*************FOOTER-MIDDLE**************/
 .footer-mid-nav {
   display: flex;
@@ -1204,7 +1205,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-width: 440px;
-
 }
 
 .footer-mid-nav-list-item {
@@ -1213,6 +1213,14 @@ body {
 
 .footer-mid-nav-list-item:last-child {
   padding-right: 0px;
+}
+
+.footer-mid-nav-list-item:hover {
+  opacity: 0.6;
+}
+
+.footer-mid-nav-list-item:active {
+  opacity: 0.3;
 }
 
 .footer-mid-nav p {
@@ -1237,8 +1245,6 @@ body {
   letter-spacing: 0.2em;
   outline: 1px solid white;
 }
-
-
 /*************FOOTER-MIDDLE**************/
 .footer-bot {
 	padding-bottom: 65px;
@@ -1270,6 +1276,14 @@ body {
 	opacity: 0.3;
 	width: 39px;
   outline: 1px solid white;
+}
+
+.footer-bot-social-btn:hover {
+	opacity: 1;
+}
+
+.footer-bot-social-btn:active {
+	opacity: 0.1;
 }
 
 .footer-bot-social-btn-facebook {
@@ -1304,9 +1318,15 @@ body {
 	top: 0;
 }
 
+.footer-copyright-logo:hover {
+	opacity: 0.6;
+}
 
-/*MODAL-CONTENT*/
+.footer-copyright-logo:active {
+	opacity: 0.3;
+}
 
+/**************MODAL-CONTENT**************/
 .modal-content {
   display: none;
   position: fixed;
@@ -1409,12 +1429,11 @@ body {
   background-repeat: no-repeat;
   border: none;
 
-
   opacity: 0.5;
   cursor: pointer;
 }
 
-/*MODAL-MAP*/
+/**************MODAL-MAP**************/
 .modal-map {
   display: none;
   position: fixed;
@@ -1440,16 +1459,12 @@ body {
   background-repeat: no-repeat;
   border: none;
 
-
   opacity: 0.5;
   cursor: pointer;
 }
 
-
-
-
-/******MAIN CATOLOG*******/
-/******PAGE-HEADER******/
+/**************MAIN CATOLOG**************/
+/**************PAGE-HEADER**************/
 .page-header {
   display: flex;
   justify-content: center;
@@ -1531,8 +1546,7 @@ body {
   background-color: black;
 }
 
-
-/******CONTANT******/
+/**************CONTANT**************/
 .contant {
   display: flex;
   outline: 1px solid black;
@@ -1580,10 +1594,6 @@ body {
   outline: 1px solid black;
 }
 
-
-
-
-
 .filter-form {
   position: relative;
   width: 200px;
@@ -1625,7 +1635,7 @@ body {
 
   background-color: black;
 }
-/*****RANGE-CONTROLS******/
+/**************RANGE-CONTROLS**************/
 .range-controls {
   position: relative;
 
@@ -1696,7 +1706,6 @@ body {
   opacity: 0.3;
 }
 
-
 .filter-btn {
   width: 100%;
   margin: 0;
@@ -1705,7 +1714,6 @@ body {
   background-color: transparent;
   border: none;
 }
-
 
 .price-controls input {
   font-weight: 300;
@@ -1730,14 +1738,13 @@ body {
   letter-spacing: 0.2em;
 }
 
-
-
-
-/******CATALOGUE******/
+/**************CATALOGUE**************/
 .catalogue {
+  display: flex;
+  flex-direction: column;
   width: calc(50% + 250px);
 
-  outline: 1px solid black;
+  outline: 1px solid red;
 }
 
 .catalogue-layout {
@@ -1798,9 +1805,7 @@ body {
   list-style: none;
   outline: 1px solid green;
 }
-
-/******CATALOGUE-ITEMS******/
-
+/**************CATALOGUE-ITEMS**************/
 .catalogue-items {
   display: flex;
   justify-content: space-between;
@@ -1961,6 +1966,7 @@ body {
   margin-bottom: 75px;
 
   background-color: #ebebeb;
+  outline: 1px solid red;
 }
 
 .paginator a {
@@ -1981,6 +1987,7 @@ body {
   padding-left: 30px;
 
   color: black;
+  outline: 1px solid red;
 }
 
 .button-back:hover,
@@ -2002,10 +2009,12 @@ body {
   padding: 0;
 
   list-style: none;
+  outline: 1px solid black;
 }
 
 .catalogue-link {
   color: #a4a4a4;
+  outline: 1px solid red;
 }
 
 .catalogue-link:hover {
