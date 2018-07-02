@@ -1699,6 +1699,7 @@ a:focus {
 }
 
 .range-controls .toggle:hover {
+  top: 24px;
   border: 9px solid #ffffff;
 }
 
@@ -1928,9 +1929,10 @@ a:focus {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-  outline: 1px solid red;
   margin-left: auto;
   font-size: 0;
+  outline: 1px solid red;
+  height: 70px;
 }
 
 
@@ -1940,6 +1942,7 @@ a:focus {
 	background-image: url(../img/svg/icon-up-dir.svg);
 	background-position: center;
 	background-repeat: no-repeat;
+  outline: 1px solid red;
 }
 
 .sorting-ascending-down {
@@ -1948,6 +1951,7 @@ a:focus {
 	background-image: url(../img/svg/icon-down-dir.svg);
 	background-position: center;
 	background-repeat: no-repeat;
+  outline: 1px solid red;
 }
 
 .sorting-ascending-down:hover {
@@ -2087,7 +2091,7 @@ a:focus {
 }
 
 .compare-link {
-	margin-top: 20px;
+	margin-top: 10px;
 
 	font-weight: 300;
 	font-size: 13px;
