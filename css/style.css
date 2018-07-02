@@ -1931,7 +1931,6 @@ a:focus {
 	padding: 0;
   margin-left: auto;
   font-size: 0;
-  outline: 1px solid red;
   height: 70px;
 }
 
@@ -1942,7 +1941,6 @@ a:focus {
 	background-image: url(../img/svg/icon-up-dir.svg);
 	background-position: center;
 	background-repeat: no-repeat;
-  outline: 1px solid red;
 }
 
 .sorting-ascending-down {
@@ -1951,7 +1949,6 @@ a:focus {
 	background-image: url(../img/svg/icon-down-dir.svg);
 	background-position: center;
 	background-repeat: no-repeat;
-  outline: 1px solid red;
 }
 
 .sorting-ascending-down:hover {
