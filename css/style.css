@@ -130,7 +130,7 @@ a:focus {
 
 .top-strip {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   margin-bottom: 26px;
 }
@@ -202,6 +202,7 @@ a:focus {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: auto;
 }
 
 .top-strip-list-item a{
@@ -682,7 +683,7 @@ a:focus {
   width: 160px;
   height: 160px;
 
-  background-position: 50% 50%; /* странно, я вроде задаю позицию по середине, но всё равно идёт смещение. что я делаю не так7 */
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
@@ -832,7 +833,7 @@ a:focus {
   letter-spacing: 0.02em;
 }
 
-.service p { /* текст ведёт себя очень странно, интервал задан. почему так? */
+.service p {
   font-weight: 300;
   color: #464646;
   font-size: 15px;
@@ -928,7 +929,7 @@ a:focus {
 	margin-top: 51px;
 }
 
-.about p,   /* тоже не ясно. значения одинаковые а смещение есть. может быть я что-то упускаю? */
+.about p,
 .contacts p {
 	color: #464646;
 	font-size: 15px;
@@ -988,9 +989,8 @@ a:focus {
 /**************FOOTER-TOP**************/
 .footer-top {
 	display: flex;
-	justify-content: space-between;
   height: 68px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .footer-top,
@@ -1015,6 +1015,7 @@ a:focus {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffc600;
+  margin-right: auto;
 }
 
 .footer-top-nav-list {
@@ -1026,6 +1027,7 @@ a:focus {
 	margin: 0;
 	padding: 0;
 	width: 900px;
+
 }
 
 .footer-top-nav-list-item {
@@ -1111,6 +1113,7 @@ a:focus {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
+  margin-top: 15px;
 
   color: #ffffff;
 	font-size: 15px;
@@ -1129,6 +1132,7 @@ a:focus {
   margin: 0;
   margin-left: auto;
   text-align: right;
+  color: white;
 }
 
 .footer-mid-nav-list {
@@ -1172,7 +1176,6 @@ a:focus {
 /*************FOOTER-MIDDLE**************/
 .footer-bot {
   display: flex;
-  justify-content: space-between;
 	padding-bottom: 65px;
 	position: relative;
 }
@@ -1190,7 +1193,7 @@ a:focus {
 .footer-bot-social {
 	display: flex;
 	justify-content: center;
-  margin-left: -55px;
+  margin-left: 420px;
 }
 
 .footer-bot-social-btn {
@@ -1233,12 +1236,12 @@ a:focus {
 
 .footer-copyright-logo {
 	background-image: url(../img/svg/logo-htmlacademy.svg);
-	background-repeat: no-repeat;
 	font-size: 0;
 	height: 34px;
   width: 27px;
-	right: 0;
+	right: 3px;
 	top: 0;
+  margin-left: auto;
 }
 
 .footer-copyright-logo:hover {
@@ -1695,6 +1698,10 @@ a:focus {
 	left: 107px;
 }
 
+.range-controls .toggle:hover {
+  border: 9px solid #ffffff;
+}
+
 .price-control {
 	margin-left: 0px;
 	margin-top: 9px;
@@ -1913,48 +1920,52 @@ a:focus {
 	color: rgba(0, 0, 0, 1);
 }
 
-.sorting-priority {
+.sorting-ascending {
 	display: flex;
-	width: 60px;
+	align-items: center;
+	min-width: 40px;
+	justify-content: space-between;
+	list-style: none;
 	margin: 0;
 	padding: 0;
-	margin-left: auto;
-	padding-top: 20px;
-
-	text-align: right;
-	list-style: none;
-}
-
-.sorting-priority li:nth-child(1) {
-	margin-top: 2px;
-	margin-right: 12px;
-	margin-left: -4px;
+  outline: 1px solid red;
+  margin-left: auto;
   font-size: 0;
 }
 
-.sorting-priority li:nth-child(2) {
-	margin-top: -1px;
+
+.sorting-ascending-up {
+	width: 11px;
+	height: 10px;
+	background-image: url(../img/svg/icon-up-dir.svg);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.sorting-priority-item {
-	font-size: 20px;
-	color: rgba(0, 0, 0, 0.3);
+.sorting-ascending-down {
+	width: 11px;
+	height: 10px;
+	background-image: url(../img/svg/icon-down-dir.svg);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.sorting-priority-item:hover {
-	color: rgba(0, 0, 0, 0.6);
+.sorting-ascending-down:hover {
+	opacity: 0.6;
 }
 
-.sorting-priority-item:active {
-	color: rgba(0, 0, 0, 1);
+.sorting-active {
+	opacity: 0.2;
 }
 
-.sorting-active-item,
-.sorting-active-item:hover,
-.sorting-active-item:active {
-	color: rgba(0, 0, 0, 1);
+.sorting-active:hover {
+	opacity: 0.4;
 }
 
+.sorting-active:active,
+.sorting-ascending-down:active {
+	opacity: 1;
+}
 /**************CATALOGUE**************/
 .catalog-list {
 	display: flex;
@@ -2069,6 +2080,7 @@ a:focus {
   width: 200px;
   margin: 0;
   padding: 0;
+  margin-top: 60px;
 
   border: none;
   background-color: transparent;
