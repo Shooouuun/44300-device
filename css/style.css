@@ -109,6 +109,10 @@ a:focus {
 .main-header-index {
   min-height: 300px;
 }
+
+.main-header .header-logotype {
+  cursor: default;
+}
 /***********TOP-STRIP***********/
 .header-logotype {
   position: absolute;
@@ -764,7 +768,7 @@ a:focus {
 
   display: block;
   width: 160px;
-  margin-top: 23px;
+  margin-top: 24px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -1113,7 +1117,7 @@ a:focus {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
-  margin-top: 15px;
+  margin-top: 14px;
 
   color: #ffffff;
 	font-size: 15px;
@@ -1193,7 +1197,7 @@ a:focus {
 .footer-bot-social {
 	display: flex;
 	justify-content: center;
-  margin-left: 420px;
+  margin-left: 419px;
 }
 
 .footer-bot-social-btn {
