@@ -28,9 +28,12 @@ body {
   background-color: #ffffff;
 }
 
+
+
 .container {
   width: 1160px;
   margin: 0 auto;
+  display: block;
 }
 
 a {
@@ -733,7 +736,6 @@ a:focus {
 
 .services-layout {
   display: flex;
-  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
   margin-top: -40px;
@@ -814,6 +816,7 @@ a:focus {
 .service {
   display: none;
   width: 760px;
+  margin-left: auto;
 }
 
 .service h3 {
@@ -988,6 +991,13 @@ a:focus {
 	justify-content: space-between;
   height: 68px;
   margin-bottom: 15px;
+}
+
+.footer-top,
+.footer-mid-nav,
+.footer-bot {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .footer-logotype {
@@ -1415,6 +1425,7 @@ a:focus {
 /**************MAIN CATOLOG**************/
 /**************PAGE-HEADER**************/
 .page-header {
+  display: block
   display: flex;
   justify-content: center;
 	flex-direction: column;
@@ -1566,7 +1577,7 @@ a:focus {
 .filters {
 	position: relative;
 
-	width: 348px;
+	width: 328px;
 
 	background-color: #eeeeee;
 }
@@ -1853,7 +1864,7 @@ a:focus {
 	width: 160px;
 	margin: 0;
 	padding: 0;
-	margin-left: 54px;
+	margin-left: 74px;
 	margin-right: 39px;
 	padding-top: 22px;
 
@@ -1951,7 +1962,7 @@ a:focus {
 	width: 760px;
 	margin: 0;
 	padding: 0;
-	margin-left: 53px;
+	margin-left: 72px;
 
 	list-style: none;
 }
@@ -2092,7 +2103,7 @@ a:focus {
 	margin: 0;
 	padding: 0;
 	margin-top: -12px;
-	margin-left: 53px;
+	margin-left: 72px;
 	margin-bottom: 74px;
 
 	list-style: none;
