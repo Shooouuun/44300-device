@@ -35,7 +35,7 @@ body {
   margin: 0 auto;
   display: block;
 }
-
+/*
 a {
   text-decoration: none;
   color: inherit;
@@ -45,6 +45,7 @@ a:hover,
 a:focus {
   outline: 1px solid red;
 }
+*/
 
 .visually-hidden {
   position: absolute;
@@ -1838,7 +1839,6 @@ a:focus {
 
 .filter-btn {
   width: 100%;
-  margin
   background-color: transparent;
   border: none;
   margin-top: 7px;
@@ -2055,7 +2055,7 @@ a:focus {
 	line-height: 24px;
 	letter-spacing: 0.01em;
 
-	text-align: end;
+	text-align: right;
 }
 
 .catalog-item-hover {
