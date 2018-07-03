@@ -109,10 +109,6 @@ a {
 .main-header-index {
   min-height: 300px;
 }
-
-.main-header .header-logotype {
-  cursor: default;
-}
 /***********TOP-STRIP***********/
 .header-logotype {
   position: absolute;
@@ -199,10 +195,12 @@ a {
 
 .search-field:focus + .search-btn {
   display: inline-block;
+  vertical-align: center;
 }
 
 .search-btn:active {
 	display: inline-block;
+  vertical-align: center;
 	color: rgba(255, 255, 255, 0.3);
 }
 /***********TOP-NAV-LIST***********/
@@ -724,6 +722,10 @@ a {
   display: block;
 }
 
+input:focus  +(~) label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 /***********CATEGORIES***********/
 .categories {
   margin-bottom: 182px;
@@ -1976,6 +1978,17 @@ a {
 	height: 23px;
 
 	background-image: url("../img/svg/checkbox-on.svg");
+}
+
+.filter-input:disabled,
+.filter-input:disabled + label,
+.filter-input:disabled ~ span {
+	pointer-events: none;
+}
+
+.filter-input:disabled + label,
+.filter-input:disabled ~ span {
+	opacity: 0.25;
 }
 
 .filter-input:hover + span,
