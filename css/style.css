@@ -28,19 +28,17 @@ body {
   background-color: #ffffff;
 }
 
-
-
 .container {
   width: 1160px;
   margin: 0 auto;
   display: block;
 }
-/*
+
 a {
   text-decoration: none;
   color: inherit;
 }
-
+/*
 a:hover,
 a:focus {
   outline: 1px solid red;
@@ -1433,7 +1431,6 @@ a:focus {
 /**************MAIN CATOLOG**************/
 /**************PAGE-HEADER**************/
 .page-header {
-  display: block
   display: flex;
   justify-content: center;
 	flex-direction: column;
