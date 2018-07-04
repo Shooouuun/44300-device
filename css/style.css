@@ -1340,7 +1340,6 @@ a {
 }
 
 .footer-bot-social-btn {
-  font-size: 0;
   height: 38px;
   margin-left: 11px;
   margin-right: 11px;
@@ -2125,7 +2124,6 @@ a {
   margin: 0;
   padding: 0;
   margin-left: auto;
-  font-size: 0;
   height: 70px;
 }
 
