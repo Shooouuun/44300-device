@@ -962,9 +962,9 @@ a {
   background-position: top right 70px;
 }
 
-#service-1:checked ~ .services-delivery,
-#service-2:checked ~ .services-warranty,
-#service-3:checked ~ .services-credit {
+.service-1:checked ~ .services-delivery,
+.service-2:checked ~ .services-warranty,
+.service-3:checked ~ .services-credit {
   display: block;
 }
 /***********BRAND***********/
