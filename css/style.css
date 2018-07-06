@@ -194,12 +194,12 @@ a {
 
 .search-field:focus + .search-btn {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .search-btn:active {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   color: rgba(255, 255, 255, 0.3);
 }
 /***********TOP-NAV-LIST***********/
@@ -1184,7 +1184,7 @@ a {
 .footer-login-btn {
   color: #ffffff;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   font-size: 15px;
   line-height: 36px;
   text-decoration: none;
@@ -1193,7 +1193,7 @@ a {
 .footer-basket-btn {
   color: #ffffff;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   font-size: 15px;
   line-height: 36px;
   text-decoration: none;
@@ -1202,7 +1202,7 @@ a {
 .footer-compare-btn {
   color: #ffffff;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   font-size: 15px;
   line-height: 36px;
   text-decoration: none;
@@ -1211,7 +1211,7 @@ a {
 .footer-sign-out-btn {
   color: #ffffff;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   font-size: 15px;
   text-align: center;
 
@@ -1584,6 +1584,107 @@ a {
 
 .modal-show {
   display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+70% {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+	}
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 /**************MAIN CATALOG**************/
 /**************PAGE-HEADER**************/
@@ -1672,8 +1773,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1160px;
-
   margin-left: 60px;
   margin-top: 38px;
   margin-bottom: 45px;
@@ -1807,7 +1906,7 @@ a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .filter-form {
@@ -2221,7 +2320,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 24px;
@@ -2236,7 +2335,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -2251,7 +2350,7 @@ a {
   margin-left: auto;
   padding-top: 1px;
 
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -2386,7 +2485,7 @@ a {
   height: 46px;
   padding-top: 24px;
 
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
