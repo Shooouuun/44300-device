@@ -1,5 +1,5 @@
 # Personal project «Device». 
-### Static three-page site for a online store gadgets.
+### Static two-page site for an online store of gadgets.
 -------
 * Student: [Sergey Kolgaev](https://up.htmlacademy.ru/htmlcss/21/user/44300).
 * Mentor: [Наталья Ильина](https://htmlacademy.ru/profile/ellianta).
