@@ -6,4 +6,4 @@
 * Specification: [Specification.md](https://github.com/Shooouuun/Sedona/blob/master/specification.md).
 
 ## Описание
-The project "Device" was completed in the framework of the traversed online course "Basic HTML and CSS" from HTML Academy.
+The project "Device: Online store gadgets" was completed in the framework of the traversed online course "Basic HTML and CSS" from HTML Academy.
